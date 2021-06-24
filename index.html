@@ -7,62 +7,124 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-   <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+   <link rel="stylesheet" href="vapor.css">
+   <link rel="stylesheet" href="style.css">
    <title>Dragon Harmony</title>
 </head>
 
+<style>
+   body.debug .container,
+   body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+   }
 
-<body>
+   body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+   }
+
+   body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+   }
+</style>
+
+<body class="">
    <header class="container-fluid">
       <div class="row">
          <div class="col-3">
-            <h1>john deere</h1>
-         </div>
-         <div class="col-9">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" id="navId">
-               <li class="nav-item">
-                  <a href="#tab1Id" class="nav-link active">Active</a>
-               </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                     aria-expanded="false">Dropdown</a>
-                  <div class="dropdown-menu">
-                     <a class="dropdown-item" href="#tab2Id">Action</a>
-                     <a class="dropdown-item" href="#tab3Id">Another action</a>
-                     <div class="dropdown-divider"></div>
-                     <a class="dropdown-item" href="#tab4Id">Action</a>
-                  </div>
-               </li>
-               <li class="nav-item">
-                  <a href="#tab5Id" class="nav-link">Another link</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link disabled">Disabled</a>
-               </li>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-               <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-               <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-               <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-               <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-               <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+            <div class="row">
+               <div class="col-4 dragon-image">
+               </div>
+               <div class="col-8">
+                  <h1>Dragon Harmony</h1>
+               </div>
             </div>
-
-            <script>
-               $('#navId a').click(e => {
-                  e.preventDefault();
-                  $(this).tab('show');
-               });
-            </script>
          </div>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light col-9">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="#">Navbar</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                           Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                     </li>
+                  </ul>
+                  <form class="d-flex">
+                     <button class="btn btn-outline-success mdi mdi-magnify" type="submit"></button>
+                  </form>
+               </div>
+            </div>
+         </nav>
       </div>
    </header>
-   <main>
-
+   <main class="container-fluid ">
+      <div class="row dragon-cat-image align-items-center">
+         <h1 class="col text-light text-center p-0 h-25">Find Your Perfect Dragon</h1>
+      </div>
+      <div class="row">
+         <div class="col-12">
+            <h1>Choose Your Dragon</h1>
+         </div>
+         <div class="col-12">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias aut dolor est veritatis, unde
+               reiciendis eum aliquam ea provident magnam!</p>
+         </div>
+      </div>
+      <div class="row justify-content-center">
+         <div class="col-12">
+            <h1>Biggest Hedgers and Clippers</h1>
+         </div>
+         <div class="col-3 ustify-content-center">
+            <img src="//placekitten.com/200/200" alt="" class="">
+            <h4>Kitty Cat</h4>
+            <button type="button" class="btn btn-primary">Click!!!</button>
+         </div>
+         <div class="col-3">
+            <img src="//placekitten.com/200/200" alt="" class="">
+            <h4>Kitty Cat</h4>
+            <button type="button" class="btn btn-primary">Click!!!</button>
+         </div>
+         <div class="col-3">
+            <img src="//placekitten.com/200/200" alt="" class="">
+            <h4>Kitty Cat</h4>
+            <button type="button" class="btn btn-primary">Click!!!</button>
+         </div>
+         <div class="col-3">
+            <img src="//placekitten.com/200/200" alt="" class="">
+            <h4>Kitty Cat</h4>
+            <button type="button" class="btn btn-primary">Click!!!</button>
+         </div>
+      </div>
+      <div class="row"></div>
+      <div class="row"></div>
    </main>
    <footer>
 

@@ -2,8 +2,33 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
   flex-grow: 1;
+}
+
+.dragon-image {
+   background-image: url(1200px-Pokémon_Dragon_Type_Icon.svg.png);
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+
+.dragon-cat-image {
+   background-image: url(dragoncat.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 45vh;
+}
+
+.centered {
+   position: absolute;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
